@@ -1,0 +1,8 @@
+if theme.aside.card_collections.enable
+  .card-widget
+    .item-headline
+      i(class=theme.aside.card_collections.icon)
+      span=theme.aside.card_collections.title
+    each item in site.data.collections.collections
+      .collections-item-content
+        a(href=item.url)=item.name 

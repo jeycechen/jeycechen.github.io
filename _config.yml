@@ -5,8 +5,8 @@
 # Site
 title: 冷静一下's bolg
 subtitle: ''
-description: ''
-keywords:
+description: 'just my learning note'
+keywords: c++, os, computer network, database, ...
 author: 冷静一下
 language: zh-CN
 timezone: ''
@@ -103,5 +103,5 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/jeycechen/jeycechen.github.io.git
+  repo: git@github.com:jeycechen/jeycechen.github.io.git
   branch: master

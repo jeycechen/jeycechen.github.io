@@ -17,6 +17,8 @@
           include ./card_post_series.pug
         !=partial('includes/widget/card_recent_post', {}, {cache: true})
         !=partial('includes/widget/card_ad', {}, {cache: true})
+        !=partial('includes/widget/card_collections', {}, {cache: true})
+
   else
     //- page
     !=partial('includes/widget/card_author', {}, {cache: true})
