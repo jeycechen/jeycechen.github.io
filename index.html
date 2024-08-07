@@ -1,0 +1,329 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>冷静一下's bolg</title><meta name="author" content="冷静一下,cklnuaa@163.com"><meta name="copyright" content="冷静一下"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="just my learning note">
+<meta property="og:type" content="website">
+<meta property="og:title" content="冷静一下&#39;s bolg">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="冷静一下&#39;s bolg">
+<meta property="og:description" content="just my learning note">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/jeycechen/pics_bed/main/IMG_321_new.JPG">
+<meta property="article:author" content="冷静一下">
+<meta property="article:tag" content="c++, os, computer network, database, ...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/jeycechen/pics_bed/main/IMG_321_new.JPG"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '冷静一下\'s bolg',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-08-07 17:17:23'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/collections.css"><meta name="generator" content="Hexo 7.1.1"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://raw.githubusercontent.com/jeycechen/pics_bed/main/IMG_321_new.JPG" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('https://raw.githubusercontent.com/jeycechen/pics_bed/main/IMG_321_new.JPG')"><nav id="nav"><span id="blog-info"><a href="/" title="冷静一下's bolg"><span class="site-name">冷静一下's bolg</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">冷静一下's bolg</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/jeycechen" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="/cklnuaa@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/08/04/c-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" title="c++对象 性能优化">c++对象 性能优化</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-08-04T10:45:03.000Z" title="发表于 2024-08-04 18:45:03">2024-08-04</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/c/">c++</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%AF%B9%E8%B1%A1/">对象</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%B7%A6%E5%80%BC-%E5%8F%B3%E5%80%BC/">左值 &amp;&amp; 右值</a></span></div><div class="content">c++ 对象的优化Test示例1234567891011class Test()&#123;  public:  int m_val;  Test(int val): m_val(val)&#123;&#125;  Test(const Test &amp;t):m_val(t.m_val)&#123;&#125;  //涉及到构造的使用的都是构造函数  void operator=(const Test &amp;t)&#123;    m_vat = t.m_val;  &#125;&#125;Test t = Test(30); //用临时对象拷贝构造一个新对象的时候 c++会进行优化， 也就是不产生临时对象，使用产生临时对象的方式直接产生新对象
+
+
+
+显隐式类型转换显式类型转化12t = Test(30);t = (Test)30;
+
+
+
+隐式类型转化1Test t = 30; // int -&gt; Test
+
+
+
+临时对象作为返回值的注意事项1234567Test *p = &amp;Test(10); //过了这条语句，临时对象被析构，指针变为野指针，// 所以指针指向 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/08/04/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5/" title="静态和动态链接">静态和动态链接</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-08-03T16:17:33.000Z" title="发表于 2024-08-04 00:17:33">2024-08-04</time></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5/">静态链接</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5/">动态链接</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/GOT%E5%92%8CPLT/">GOT和PLT</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E7%A8%8B%E5%BA%8F%E5%8A%A0%E8%BD%BD/">程序加载</a></span></div><div class="content">程序的翻译123456#include &lt;stdio.h&gt;int main()&#123;	printf(&quot;hello world!\n&quot;);  return 0;&#125;
+
+
+
+
+预处理阶段.c -&gt; .i主要处理 # 开头的命令， #define 宏展开 #ifdef #include
+例如#include &lt;stdio.h&gt;命令告诉预处理器读取系统头文件
+stdio.h的内容,并把它直接插人程序文本中
+编译阶段.i -&gt; .s编译器ccl 将文本文件hello.i 翻译成文本文件hello.s
+汇编阶段.s -&gt; .o汇编器as将hello.s 翻译成机器语言指令序列（二进制），生成一种叫做 可重定位目标程序.o
+链接阶段.o -&gt; elfhello.o  此时只有一个main函数 并没有 printf的函数的 具体 指令
+ printf函数,它是每个C编译器都提供的标准C库中的一个函数。 printf函数存在于一个名为printf.o的单独的预编译好了的目标文件中(c库给的）,而这个文件必须以某种方式合并到 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2024/08/03/mhy_%E7%AC%94%E8%AF%95/" title="mhy8.3 笔试回顾"><img class="post-bg" src="https://raw.githubusercontent.com/jeycechen/jeycechen_pics_bed/main/20240805100655.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mhy8.3 笔试回顾"></a></div><div class="recent-post-info"><a class="article-title" href="/2024/08/03/mhy_%E7%AC%94%E8%AF%95/" title="mhy8.3 笔试回顾">mhy8.3 笔试回顾</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-08-03T15:31:29.712Z" title="发表于 2024-08-03 23:31:29">2024-08-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AF%95%E8%AE%B0%E5%BD%95/">面试笔试记录</a></span><span class="article-meta tags"><span class="article-meta-separator">|</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%B5%81%E6%B0%B4%E7%BA%BF/">流水线</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E6%8E%92%E5%BA%8F/">排序</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/">异常处理</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/TCP-UDP/">TCP UDP</a><span class="article-meta-link">•</span><i class="fas fa-tag"></i><a class="article-meta__tags" href="/tags/%E9%9D%A2%E8%AF%95-%E7%AC%94%E8%AF%95/">面试 &amp;&amp; 笔试</a></span></div><div class="content">mhy8.3 笔试回顾
+选择题流水线的执行时间计算
+有8个磁盘块需要处理，现在有一个缓存大小和一个磁盘块一样，磁盘块搬移到缓存需要80ms， 缓存搬移到cpu需要40ms，cpu处理这个磁盘块的数据需要60ms，流水线架构需要多长时间完成？
+如果换成双缓存，需要多长时间？
+
+
+所以答案是 (80 + 40) * 8 + 60  &#x3D; 1020 ms
+如果是双缓冲的话是多少呢？
+ 
+所以答案是 80 * 8 + 40 + 60 &#x3D; 740 ms
+总结
+ 把图画出来 分析清楚各个stage如何链接就可以了
+流水线的思想就是 一个过程如果可以被划分成实际的多个小过程，就可以使用流水线，使得每个模块都尽量不空转😈，进而提升吞吐率
+距离就是 洗衣服40min-烘干30min-折叠衣服20min
+如果有5桶衣服，洗第一桶衣服走完整个流程 也就是折叠完第一桶衣服之后才去 提第二桶衣服放到洗衣机里面洗 （问题在哪？ 在折叠衣服的时候， 洗衣机没有人用！浪费时间）
+还有笔者 小时候学校考的一道题， 大意是用一口锅烙饼，也是使用的流水线思想来提升效率；
+稳定的排序算法什么是稳定？稳定的 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/29/dp/" title="dp">dp</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-29T11:54:07.297Z" title="发表于 2024-07-29 19:54:07">2024-07-29</time></span></div><div class="content">动态规划
+区间dp常用于字符串，戳气球…
+一般是三维 dp[i][j][k] 表示区间 [i,j] 内状态k 的方案数&#x2F;… 
+但是有可能超时 
+所以结合 线段树， 树状数组 ，二分等等
+数位dp与数字有关
+
+ 例题 2801 统计范围内的步进数字数目
+ 给定两个正整数low和high 计算 闭区间[low, high]之间的步进数字数目
+ 步进数字: 相邻数位之间差的绝对值 是 1 ，
+ 对 1e9 + 7 取模然后返回
+ 1 &lt;&#x3D; low, high &lt;&#x3D; 10^100
+
+模版
+f(i, pre, is_limit, is_num); 表示构造第i位及其之后数位的合法方案数量，
+i , pre 根据题目要求决定是否需要，后两个必须
+pre 前一位数位是什么？
+is_limit 是否收到了最大数字n的限制，比如 123， 第一位取了1 ，第二位就收到了限制 ，0～2 
+is_num 前面是否有数字，如果前面没有数字，这一位也可以跳过，没有数字，可以是&gt;&#x3D; 1的数字，也可以跳过， 如果前面有数字，这一位就取决于is_limit
+递 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/07/03/KMP/" title="KMP 专题">KMP 专题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-03T09:01:42.382Z" title="发表于 2024-07-03 17:01:42">2024-07-03</time></span></div><div class="content">什么是KMP说到KMP，先说一下KMP这个名字是怎么来的，为什么叫做KMP呢。
+因为是由这三位学者发明的：Knuth，Morris和Pratt，所以取了三位学者名字的首字母。所以叫做KMP
+KMP有什么用KMP主要应用在字符串匹配上。
+KMP的主要思想是当出现字符串不匹配时，可以知道一部分之前已经匹配的文本内容，可以利用这些信息避免从头再去做匹配了。
+什么是前缀表用来回退的，它记录了模式串与文本串不匹配的时候，模式串应该从哪里开始重新匹配
+那么前缀表：记录下标 i 之前（包括i）的字符串中，有多大长度的相同前缀后缀
+
+比如模式串 aabaaf ，f的位置的最长前缀后缀就是2
+
+前缀表具有告诉我们当前位置匹配失败，跳到之前已经匹配过的地方的能力，
+最长相等前后缀字符串的前缀是指不包含最后一个字符的所有以第一个字符开头的连续子串。
+后缀是指不包含第一个字符的所有以最后一个字符结尾的连续子串。
+所以例子 a a b a a f的 前缀表是
+​		0 1 0 1 2 0
+前缀表与next数组这并不涉及到KMP的原理，而是具体实现，next数组既可以就是前缀表，也可以是前缀表统一减一（右移一位， ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/25/%E6%99%BA%E8%83%BD%E6%8C%87%E9%92%88/" title="智能指针">智能指针</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-25T08:28:53.367Z" title="发表于 2024-06-25 16:28:53">2024-06-25</time></span></div><div class="content">为什么要使用智能指针？智能指针 帮助管理动态分配的内存的，可以帮助我们自动释放new出来的内存，从而避免内存泄露
+
+如果分配的动态内存都交给有生命周期的对象来处理，那么在对象过期的时候，让它的析构函数删除指向的内存，这似乎是一个好的方案？
+智能指针就是通过这样的方法来解决指针自动释放的问题 
+
+C++ 98 提供了 auto_ptr
+C++11提供了unique_ptr, shared_ptr和weak_ptr
+auto_ptr1234#include &lt;memory&gt;auto_ptr&lt;类型&gt; 变量名字（new 类型）  auto_ptr&lt;myclass&gt; ar(new myclass)
+
+
+
+智能指针 可以像正常指针一样使用
+1234auto_ptr&lt;myclass&gt; ptr(new myclass());ptr-&gt;func();(*ptr).func(); //都是合法的
+
+
+
+三个常用函数get()获取智能指针托管的指针地址
+但是一般不会使用也没必要去使用
+release()取消智能指针对动态内存的托管
+reset()重置智能 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/06/09/muduo/" title="重写muduo">重写muduo</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-06-09T15:07:13.502Z" title="发表于 2024-06-09 23:07:13">2024-06-09</time></span></div><div class="content">muduo网络库的重写
+目的1、理解阻塞、非阻塞、同步、异步
+2、理解Unix&#x2F;Linux上的五种IO模型
+3、epoll的原理以及优势
+4、深刻理解Reactor模型5、从开源C++网络库，学习优秀的代码设计
+6、掌握基于事件驱动和事件回调的epoll+线程池面向对象编程
+7、通过深入理解muduo源码，加深对于相关项目的深刻理解
+8、改造muduo，不依赖boost，用C++11重构
+知识储备1、TCP协议和UDP协议
+2、TCP编程和UDP编程步骤
+3、IO复用接口编程select、poll、epoll编程
+4、Linux的多线程编程pthread、进程和线程模型 C++20标准加入了协程的支持
+阻塞、非阻塞、同步、异步典型的一次IO的两个阶段 数据准备( 从设备缓冲区复制到 内核缓冲区 ）数据读写（从内核空间复制到用户空间）
+数据准备： 根据系统IO操作的就绪状态
+
+阻塞  调用IO方法线程进入阻塞状态
+非阻塞 不会改变线程的状态通过返回值判断
+
+ssize_t recv(int socked,void *buf, size_t len, int flags)
+int ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/05/23/CAS%E7%AE%97%E6%B3%95/" title="CAS algorithm">CAS algorithm</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-05-23T09:02:03.908Z" title="发表于 2024-05-23 17:02:03">2024-05-23</time></span></div><div class="content">CAS（比较与交换，Compare and swap)
+有锁算法独占锁，假设最坏的情况，并且只有在确保其他线程不会造成干扰的情况下执行，导致其他所有需要锁的线程挂起，等待持有锁的线程释放锁。
+缺点：
+
+产生竞争时，线程被阻塞等待，无法做到线程实时响应
+dead lock
+live lock
+优先级反转
+使用不当，造成性能下降
+
+乐观锁与悲观锁我们知道CAS操作并不会锁住共享变量，也就是一种非阻塞的同步机制，CAS就是乐观锁的实现。
+
+乐观锁 乐观锁总是假设最好的情况，每次去操作数据都认为不会被别的线程修改数据，所以在每次操作数据的时候都不会给数据加锁，即在线程对数据进行操作的时候，别的线程不会阻塞仍然可以对数据进行操作，只有在需要更新数据的时候才会去判断数据是否被别的线程修改过，如果数据被修改过则会拒绝操作并且返回错误信息给用户。
+悲观锁 悲观锁总是假设最坏的情况，每次去操作数据时候都认为会被的线程修改数据，所以在每次操作数据的时候都会给数据加锁，让别的线程无法操作这个数据，别的线程会一直阻塞直到获取到这个数据的锁。这样的话就会影响效率，比如当有个线程发生一个很耗时的操作的时候，别的线 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/04/12/cpp/" title="cpp learning">cpp learning</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-12T13:03:15.439Z" title="发表于 2024-04-12 21:03:15">2024-04-12</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2024/04/12/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="设计模式">设计模式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-04-12T13:02:32.862Z" title="发表于 2024-04-12 21:02:32">2024-04-12</time></span></div><div class="content">设计模式
+单例模式是一种 创建型模式
+常用到的有 日志模块 数据库模块 
+一个类创建对象，不管创建多少个对象，永远只能得到该类型一个对象的示例
+123456789101112131415161718192021222324252627282930313233343536373839404142class SingleTon&#123;public:  static SingleTon* getInstace()&#123; //3. 获取类的唯一实例对象的接口方法    return &amp;instance;  &#125;private:  	static SinleTonl instance;// 2. 定义唯一的类的实例对象  	SingleTon()&#123; // 1 .构造函数私有化          &#125;  	SingleTon(const SingleTon&amp;) = delete;  	SingleTon&amp; operator=(const Single&amp;) = delete; //限制构造方式 只能是默认的私有构造&#125;;Si ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://raw.githubusercontent.com/jeycechen/pics_bed/main/IMG_321_new.JPG" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">冷静一下</div><div class="author-info__description">一个小菜鸟</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/jeycechen"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/jeycechen" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="/cklnuaa@163.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/04/c-%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/" title="c++对象 性能优化">c++对象 性能优化</a><time datetime="2024-08-04T10:45:03.000Z" title="发表于 2024-08-04 18:45:03">2024-08-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/04/%E9%9D%99%E6%80%81%E5%92%8C%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5/" title="静态和动态链接">静态和动态链接</a><time datetime="2024-08-03T16:17:33.000Z" title="发表于 2024-08-04 00:17:33">2024-08-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/08/03/mhy_%E7%AC%94%E8%AF%95/" title="mhy8.3 笔试回顾"><img src="https://raw.githubusercontent.com/jeycechen/jeycechen_pics_bed/main/20240805100655.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="mhy8.3 笔试回顾"/></a><div class="content"><a class="title" href="/2024/08/03/mhy_%E7%AC%94%E8%AF%95/" title="mhy8.3 笔试回顾">mhy8.3 笔试回顾</a><time datetime="2024-08-03T15:31:29.712Z" title="发表于 2024-08-03 23:31:29">2024-08-03</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/29/dp/" title="dp">dp</a><time datetime="2024-07-29T11:54:07.297Z" title="发表于 2024-07-29 19:54:07">2024-07-29</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/03/KMP/" title="KMP 专题">KMP 专题</a><time datetime="2024-07-03T09:01:42.382Z" title="发表于 2024-07-03 17:01:42">2024-07-03</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%9D%A2%E8%AF%95%E7%AC%94%E8%AF%95%E8%AE%B0%E5%BD%95/"><span class="card-category-list-name">面试笔试记录</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/c/" style="font-size: 1.15em; color: rgb(53, 24, 86)">c++</a><a href="/tags/%E5%AF%B9%E8%B1%A1/" style="font-size: 1.15em; color: rgb(129, 51, 165)">对象</a><a href="/tags/%E5%B7%A6%E5%80%BC-%E5%8F%B3%E5%80%BC/" style="font-size: 1.15em; color: rgb(86, 6, 142)">左值 && 右值</a><a href="/tags/%E6%B5%81%E6%B0%B4%E7%BA%BF/" style="font-size: 1.15em; color: rgb(18, 164, 94)">流水线</a><a href="/tags/%E6%8E%92%E5%BA%8F/" style="font-size: 1.15em; color: rgb(67, 154, 31)">排序</a><a href="/tags/%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/" style="font-size: 1.15em; color: rgb(148, 171, 85)">异常处理</a><a href="/tags/TCP-UDP/" style="font-size: 1.15em; color: rgb(57, 113, 17)">TCP UDP</a><a href="/tags/%E9%9D%A2%E8%AF%95-%E7%AC%94%E8%AF%95/" style="font-size: 1.15em; color: rgb(200, 171, 55)">面试 && 笔试</a><a href="/tags/%E9%9D%99%E6%80%81%E9%93%BE%E6%8E%A5/" style="font-size: 1.15em; color: rgb(175, 189, 73)">静态链接</a><a href="/tags/%E5%8A%A8%E6%80%81%E9%93%BE%E6%8E%A5/" style="font-size: 1.15em; color: rgb(156, 175, 5)">动态链接</a><a href="/tags/GOT%E5%92%8CPLT/" style="font-size: 1.15em; color: rgb(59, 88, 5)">GOT和PLT</a><a href="/tags/%E7%A8%8B%E5%BA%8F%E5%8A%A0%E8%BD%BD/" style="font-size: 1.15em; color: rgb(94, 117, 31)">程序加载</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/08/"><span class="card-archive-list-date">八月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/06/"><span class="card-archive-list-date">六月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/05/"><span class="card-archive-list-date">五月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><span class="card-archive-list-count">12</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">20</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2024-03-31T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">33.9k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-08-07T09:17:22.923Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 冷静一下</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: (str) => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: (subtitleType) => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        getScript('https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+</script><script>function subtitleType () {
+  getScript('https://sdk.jinrishici.com/v2/browser/jinrishici.js').then(() => {
+    jinrishici.load(result =>{
+      if (true) {
+        const sub = []
+        const content = result.data.content
+        sub.unshift(content)
+        typedJSFn.init(sub)
+      } else {
+        document.getElementById('subtitle').textContent = result.data.content
+      }
+    })
+  })
+}
+typedJSFn.run(subtitleType)
+</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
